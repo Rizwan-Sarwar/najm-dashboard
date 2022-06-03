@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD | Najm</title>
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-dashboard">
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="cantainer">
+                <div class="headingWrapper">
+                    <h5>operations monitoring dashboard - <span>live</span></h5>
+                </div>
+                <div class="fieldsWrapper">
+                    <div class="fields">
+                        <label for="">reagion</label>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="fields">
+                        <label for="">city</label>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="fields">
+                        <label for="">zone</label>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="buttonWrapper">
+                        <a href="##"><i class="bi bi-search"></i></a>
+                    </div>
+                    <div class="buttonWrapper history-btn">
+                        <a href="##">history</a>
+                    </div>
+                    <div class="buttonWrapper">
+                        <a href="##">heat map</a>
+                    </div>
+                    <div class="buttonWrapper">
+                        <a href="##">geo locator</a>
+                    </div>
+                    <div class="bashbaordRefreshTime">
+                        <p>last refresh time <span>09:14:29 AM</span></p>
+                    </div>
+                </div>
+                <div class="profileWrapper">
+                    <a href="##"><i class="bi bi-person"></i>muhammad khalid</a>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/logo.PNG" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="##"><i class="bi bi-house-door"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="bi bi-app"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="bi bi-award"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="bi bi-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="bi bi-bar-chart-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- dashboard Start -->
+        <div class="dashboard">
+            <div class="cantainer">
+                <div class="rs_row_3">
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/time.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>avg.response time</h5>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                <a href="##"><img src="images/help.png" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <!-- <img src="images/guage_1.PNG" alt="alt_1"> -->
+                            <canvas id="guage_1"></canvas>
+                        </div>
+                        <div class="bottom">
+                            <div class="chart-de">
+                                <p>today <span>20 min.</span></p>
+                            </div>
+                            <div class="chart-de">
+                                <p>monthly <span>20 min.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Avg.Surveyors ArrivalTime (Mins)</h5>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                <a href="##"><img src="images/help.png" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <canvas id="guage_2"></canvas>
+                        </div>
+                        <div class="bottom">
+                            <div class="chart-de">
+                                <p>today <span>20 min.</span></p>
+                            </div>
+                            <div class="chart-de">
+                                <p>monthly <span>20 min.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Avg.Investigation Time (Mins)</h5>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                <a href="##"><img src="images/help.png" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <canvas id="guage_3"></canvas>
+                        </div>
+                        <div class="bottom">
+                            <div class="chart-de">
+                                <p>today <span>20 min.</span></p>
+                            </div>
+                            <div class="chart-de">
+                                <p>monthly <span>20 min.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs_row_col_2_2 bbb">
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box">
+                                    <img src="images/survey.png" alt="alt_1">
+                                    <h5>today's response time</h5>
+                                </div>
+                                <div class="box">
+                                    <div class="colA">
+                                        <div class="asd90 colorA"></div>
+                                        <p>Case Waiting Time Report</p>
+                                    </div>
+                                    <div class="colA">
+                                        <div class="asd90 colorB"></div>
+                                        <p>Case Waiting Time Report</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="box">
+                                    <div class="rs_btn_toggle">
+                                        <label for="circle-toggle">Include Reject Cases</label>
+                                        <div class="custom_btn_toggle" id="circle-toggle" onclick="btnToggle()">
+                                            <div class="toggle-circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <a href="##"><img src="images/copy.png" alt="alt"></a>
+                                    <a href="##"><img src="images/help.png" alt="alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomm">
+                            <div class="box">
+                                <div class="box-top">
+                                    <div class="box-top-left">
+                                        <p><span>0-9</span> min.</p>
+                                    </div>
+                                    <div class="box-top-right">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="box-bottom">
+                                    <div class="box-bottom-left"><span>3998</span></div>
+                                    <div class="box-bottom-right"><span>3996</span></div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-top">
+                                    <div class="box-top-left">
+                                        <p><span>19-30</span> min.</p>
+                                    </div>
+                                    <div class="box-top-right">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="box-bottom">
+                                    <div class="box-bottom-left"><span>3998</span></div>
+                                    <div class="box-bottom-right"><span>3996</span></div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-top">
+                                    <div class="box-top-left">
+                                        <p><span>31-40</span> min.</p>
+                                    </div>
+                                    <div class="box-top-right">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="box-bottom">
+                                    <div class="box-bottom-left"><span>3998</span></div>
+                                    <div class="box-bottom-right"><span>3996</span></div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-top">
+                                    <div class="box-top-left">
+                                        <p><span>41-60</span> min.</p>
+                                    </div>
+                                    <div class="box-top-right">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="box-bottom">
+                                    <div class="box-bottom-left"><span>3998</span></div>
+                                    <div class="box-bottom-right"><span>3996</span></div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-top">
+                                    <div class="box-top-left">
+                                        <p><span>60+</span> min.</p>
+                                    </div>
+                                    <div class="box-top-right">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="box-bottom">
+                                    <div class="box-bottom-left"><span>3998</span></div>
+                                    <div class="box-bottom-right"><span>3996</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs_column asd123">
+                        <div class="six_box">
+                            <div class="box">
+                                <p>Case Waiting for Assignment</p>
+                                <span>982</span>
+                            </div>
+                            <div class="box">
+                                <p>Case Waiting for Surveyor arrival</p>
+                                <span>20</span>
+                            </div>
+                            <div class="box">
+                                <p>Case under investigation</p>
+                                <span>20</span>
+                            </div>
+                            <div class="box">
+                                <p>Case pending for data upload</p>
+                                <span>20</span>
+                            </div>
+                            <div class="box">
+                                <p>Average case per Surveyor</p>
+                                <span>20</span>
+                            </div>
+                            <div class="box">
+                                <p>AVG. Total Time (Reg+Arrival+Invest)</p>
+                                <span>987</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs_column qyhfygj12s">
+
+                        <div class="rs_column">
+                            <div class="top">
+                                <div class="title">
+                                    <div class="icon">
+                                        <img src="images/time.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h5>avg.response time</h5>
+                                    </div>
+                                </div>
+                                <div class="more-info">
+                                    <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                    <a href="##"><img src="images/help.png" alt="icon"></a>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <!-- <img src="images/chart_4.PNG" alt="alt_1"> -->
+                                <canvas id="chart_4" style="width: 150px; height: 150px; max-width: 100%; max-height: 150px;"></canvas>
+                                <p class="textasd13s">3500<span>case</span></p>
+                            </div>
+                            <div class="bottom" style="display: none;">
+                                <div class="chart-de">
+                                    <p>today <span>20 min.</span></p>
+                                </div>
+                                <div class="chart-de">
+                                    <p>monthly <span>20 min.</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box sm-boxp12iu">
+                            <div class="box a12as">
+                                <div class="box rs_column">
+                                    <p>Acquisition Rate</p>
+                                    <span>62%</span>
+                                </div>
+
+                            </div>
+                            <div class="box a12as">
+                                <div class="box rs_column">
+                                    <p>Regression Rate</p>
+                                    <span>62%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rs_column">
+                            <div class="top">
+                                <div class="title">
+                                    <div class="icon">
+                                        <img src="images/time.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h5>avg.response time</h5>
+                                    </div>
+                                </div>
+                                <div class="more-info">
+                                    <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                    <a href="##"><img src="images/help.png" alt="icon"></a>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <!-- <img src="images/chart_5.PNG" alt="alt_1"> -->
+                                <canvas id="chart_5" style="width: 150px; height: 150px; max-width: 100%; max-height: 150px;"></canvas>
+                                <p class="textasd13s">150<span>Surveyors</span></p>
+                            </div>
+                            <div class="bottom" style="display: none;">
+                                <div class="chart-de">
+                                    <p>today <span>20 min.</span></p>
+                                </div>
+                                <div class="chart-de">
+                                    <p>monthly <span>20 min.</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="rs_row_2">
+                    <div class="rs_column rs-col-bg-unset">
+                        <div class="rs_btn_tw0">
+                            <a href="##">Hourly Auto Assignment</a>
+                            <a href="##">Daily Auto Assignment</a>
+                        </div>
+                    </div>
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Auto Assignment Cases(Live)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case_count">
+                            <span>50</span>
+                            <span>62%</span>
+                        </div>
+                    </div>
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Actual Fraud Case Count</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case_count rs_right-span">
+                            <span>5</span>
+                        </div>
+                    </div>
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Fleet Status</h5>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                <a href="##"><img src="images/help.png" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div class="case_count">
+                            <span>50</span>
+                            <span class="text-span001">HDD Count: 10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs_col_2">
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Top 3 cases Registered Source</h5>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                <a href="##"><img src="images/help.png" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <!-- <img src="images/chart_1.PNG" alt="alt_1"> -->
+                            <canvas id="chart_1"></canvas>
+                        </div>
+                        <div class="bottom" style="display: none;">
+                            <div class="chart-de">
+                                <p>today <span>20 min.</span></p>
+                            </div>
+                            <div class="chart-de">
+                                <p>monthly <span>20 min.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5># Cases Today Vs Yesterday by Hrs.</h5>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                <a href="##"><img src="images/help.png" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <!-- <img src="images/chart_2.PNG" alt="alt_1"> -->
+                            <canvas id="chart_2"></canvas>
+                        </div>
+                        <div class="bottom" style="display: none;">
+                            <div class="chart-de">
+                                <p>today <span>20 min.</span></p>
+                            </div>
+                            <div class="chart-de">
+                                <p>monthly <span>20 min.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs_column">
+                        <div class="top">
+                            <div class="title">
+                                <div class="icon">
+                                    <img src="images/survey.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Top 10 Cause of Accidents</h5>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <a href="##"><img src="images/copy.png" alt="icon"></a>
+                                <a href="##"><img src="images/help.png" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <!-- <img src="images/chart_3.PNG" alt="alt_1"> -->
+                            <canvas id="chart_3"></canvas>
+                        </div>
+                        <div class="bottom" style="display: none;">
+                            <div class="chart-de">
+                                <p>today <span>20 min.</span></p>
+                            </div>
+                            <div class="chart-de">
+                                <p>monthly <span>20 min.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dashboard End -->
+        <!-- footer -->
+        <div class="footer">
+            <p>all rights reserved to najm insurance services 2022</p>
+        </div>
+    </div>
+    <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+
+</html>
